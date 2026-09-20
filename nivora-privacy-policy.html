@@ -6,84 +6,730 @@
   <meta name="description" content="Política de privacidade da extensão Nivora para Microsoft Edge, criada pela WBCS.">
   <title>Política de Privacidade — Nivora</title>
   <link rel="icon" href="nivora-icon.png">
+
   <style>
-    :root{color-scheme:dark;--bg:#090d17;--line:rgba(255,255,255,.11);--text:#eef3fb;--muted:#aab6ca;--accent:#75c7ff}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--bg)}
-    body{margin:0;color:var(--text);background:radial-gradient(circle at 15% -5%,rgba(72,148,255,.18),transparent 34rem),radial-gradient(circle at 95% 10%,rgba(137,92,246,.14),transparent 30rem),var(--bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.7}
-    a{color:var(--accent)}main{width:min(1120px,calc(100% - 36px));margin:0 auto}
-    .hero{padding:76px 0 54px;border-bottom:1px solid var(--line)}
-    .brand{display:flex;align-items:center;gap:14px;margin-bottom:44px;font-size:19px;font-weight:750}.brand img{border-radius:15px;box-shadow:0 14px 38px rgba(44,132,255,.25)}
-    .eyebrow{margin:0 0 10px;color:var(--accent);font-size:12px;font-weight:750;letter-spacing:.13em;text-transform:uppercase}
-    h1{max-width:780px;margin:0;font-size:clamp(42px,7vw,78px);line-height:1.02;letter-spacing:-.045em}
-    .lead{max-width:690px;margin:24px 0 0;color:var(--muted);font-size:clamp(18px,2.3vw,24px)}
-    .meta{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:34px;color:var(--muted);font-size:13px}
-    .content{display:grid;grid-template-columns:220px minmax(0,760px);justify-content:space-between;gap:64px;padding:64px 0 90px}
-    nav{position:sticky;top:28px;align-self:start;display:grid;gap:8px}nav p{margin:0 0 7px;color:var(--text);font-size:13px;font-weight:700}nav a{color:var(--muted);font-size:13px;text-decoration:none}nav a:hover{color:var(--accent)}
-    article section{padding:0 0 38px;scroll-margin-top:24px}article section+section{padding-top:38px;border-top:1px solid var(--line)}
-    h2{margin:0 0 15px;font-size:clamp(23px,3vw,31px);line-height:1.2;letter-spacing:-.025em}
-    p{margin:0 0 14px;color:#c8d2e2}ul{margin:16px 0 0;padding-left:22px;color:#c8d2e2}li{margin:8px 0}
-    .english{margin-top:20px;padding:38px!important;border:1px solid rgba(117,199,255,.22)!important;border-radius:20px;background:linear-gradient(135deg,rgba(117,199,255,.07),rgba(155,140,255,.05))}
-    footer{display:flex;justify-content:space-between;padding:26px 0 42px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
-    @media(max-width:760px){main{width:min(100% - 28px,680px)}.hero{padding-top:40px}.brand{margin-bottom:38px}.content{display:block;padding-top:42px}nav{display:none}.english{padding:24px!important}}
+    :root {
+      color-scheme: dark;
+      --bg: #090d17;
+      --line: rgba(255,255,255,.11);
+      --text: #eef3fb;
+      --muted: #aab6ca;
+      --accent: #75c7ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--bg);
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 15% -5%, rgba(72,148,255,.18), transparent 34rem),
+        radial-gradient(circle at 95% 10%, rgba(137,92,246,.14), transparent 30rem),
+        var(--bg);
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    main {
+      width: min(1120px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    .hero {
+      padding: 76px 0 54px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 44px;
+      font-size: 19px;
+      font-weight: 750;
+    }
+
+    .brand img {
+      border-radius: 15px;
+      box-shadow: 0 14px 38px rgba(44,132,255,.25);
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 780px;
+      margin: 0;
+      font-size: clamp(42px, 7vw, 78px);
+      line-height: 1.02;
+      letter-spacing: -.045em;
+    }
+
+    .lead {
+      max-width: 760px;
+      margin: 24px 0 0;
+      color: var(--muted);
+      font-size: clamp(18px, 2.3vw, 24px);
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 24px;
+      margin-top: 34px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 220px minmax(0, 760px);
+      justify-content: space-between;
+      gap: 64px;
+      padding: 64px 0 90px;
+    }
+
+    nav {
+      position: sticky;
+      top: 28px;
+      align-self: start;
+      display: grid;
+      gap: 8px;
+    }
+
+    nav p {
+      margin: 0 0 7px;
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: var(--muted);
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    article section {
+      padding: 0 0 38px;
+      scroll-margin-top: 24px;
+    }
+
+    article section + section {
+      padding-top: 38px;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 15px;
+      font-size: clamp(23px, 3vw, 31px);
+      line-height: 1.2;
+      letter-spacing: -.025em;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: #c8d2e2;
+    }
+
+    ul {
+      margin: 16px 0 0;
+      padding-left: 22px;
+      color: #c8d2e2;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    .english {
+      margin-top: 20px;
+      padding: 38px !important;
+      border: 1px solid rgba(117,199,255,.22) !important;
+      border-radius: 20px;
+      background:
+        linear-gradient(
+          135deg,
+          rgba(117,199,255,.07),
+          rgba(155,140,255,.05)
+        );
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 26px 0 42px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 760px) {
+      main {
+        width: min(100% - 28px, 680px);
+      }
+
+      .hero {
+        padding-top: 40px;
+      }
+
+      .brand {
+        margin-bottom: 38px;
+      }
+
+      .content {
+        display: block;
+        padding-top: 42px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .english {
+        padding: 24px !important;
+      }
+    }
   </style>
 </head>
+
 <body>
 <main>
+
   <header class="hero">
-    <div class="brand"><img src="nivora-icon.png" alt="" width="56" height="56"><span>Nivora</span></div>
+    <div class="brand">
+      <img src="nivora-icon.png" alt="" width="56" height="56">
+      <span>Nivora</span>
+    </div>
+
     <p class="eyebrow">WBCS · Microsoft Edge extension</p>
+
     <h1>Política de Privacidade</h1>
-    <p class="lead">Privacidade por padrão, sincronização somente quando você escolher.</p>
-    <div class="meta"><span>Em vigor desde 29 de julho de 2026</span><a href="#english">English summary</a></div>
+
+    <p class="lead">
+      Privacidade por padrão, controles locais e serviços externos somente
+      quando necessários às funções escolhidas pelo usuário.
+    </p>
+
+    <div class="meta">
+      <span>Última atualização: 19 de setembro de 2026</span>
+      <a href="#english">English summary</a>
+    </div>
   </header>
+
   <div class="content">
+
     <nav aria-label="Nesta página">
       <p>Nesta página</p>
-      <a href="#summary">Resumo</a><a href="#local-data">Dados armazenados localmente</a>
-      <a href="#google-sync">Sincronização opcional com Google</a><a href="#external-services">Serviços externos</a>
-      <a href="#not-collected">O que a Nivora não coleta</a><a href="#retention">Retenção e exclusão</a>
-      <a href="#security">Segurança e compartilhamento</a><a href="#changes">Alterações e contato</a>
+
+      <a href="#summary">Resumo</a>
+      <a href="#local-data">Dados armazenados localmente</a>
+      <a href="#search-history">Pesquisa e histórico</a>
+      <a href="#weather">Clima</a>
+      <a href="#google-sync">Sincronização com Google</a>
+      <a href="#external-services">Serviços externos</a>
+      <a href="#not-collected">O que não coletamos</a>
+      <a href="#retention">Retenção e exclusão</a>
+      <a href="#security">Segurança e compartilhamento</a>
+      <a href="#changes">Alterações e contato</a>
     </nav>
+
     <article>
-      <section id="summary"><h2>Resumo</h2>
-        <p>A Nivora é uma extensão de nova guia criada pela WBCS. Ela não vende dados, não exibe anúncios, não realiza análise comportamental e não monitora o histórico de navegação.</p>
-        <p>A maior parte dos dados permanece somente no navegador. A sincronização com Google é opcional e só acontece após uma ação explícita do usuário.</p>
+
+      <section id="summary">
+        <h2>Resumo</h2>
+
+        <p>
+          A Nivora é uma extensão criada pela WBCS que substitui a página
+          de nova guia do Microsoft Edge por um painel pessoal e
+          personalizável.
+        </p>
+
+        <p>
+          A extensão oferece recursos como mecanismos de pesquisa,
+          histórico de pesquisa próprio, atalhos, ícones personalizados,
+          wallpapers, relógio, saudação, clima, temas claro e escuro,
+          contraste adaptativo e outras preferências visuais.
+        </p>
+
+        <p>
+          A Nivora não vende dados, não exibe anúncios, não realiza
+          análise comportamental e não monitora o histórico geral de
+          navegação do Microsoft Edge.
+        </p>
+
+        <p>
+          A maior parte das informações permanece no navegador. Alguns
+          dados são enviados a serviços externos somente quando uma função
+          correspondente é utilizada, como pesquisa na web, clima,
+          pesquisa de ícones ou sincronização opcional com Google.
+        </p>
       </section>
-      <section id="local-data"><h2>Dados armazenados localmente</h2>
-        <p>A Nivora pode armazenar no dispositivo: nome ou apelido da saudação, idioma, fuso horário, mecanismos de pesquisa, preferências visuais, posições e tamanhos dos elementos, atalhos, ícones personalizados e wallpapers escolhidos pelo usuário.</p>
-        <p>Esses dados são necessários para montar a nova guia personalizada. Wallpapers não são enviados ao Google Drive.</p>
+
+      <section id="local-data">
+        <h2>Dados armazenados localmente</h2>
+
+        <p>
+          Para manter a configuração da nova guia, a Nivora pode armazenar
+          localmente informações como:
+        </p>
+
+        <ul>
+          <li>nome ou apelido usado na saudação;</li>
+          <li>idioma e fuso horário;</li>
+          <li>mecanismo de pesquisa escolhido;</li>
+          <li>URLs de mecanismos de pesquisa personalizados;</li>
+          <li>histórico de pesquisas realizadas pela barra da Nivora;</li>
+          <li>atalhos e seus endereços;</li>
+          <li>favicons e ícones personalizados;</li>
+          <li>wallpapers escolhidos pelo usuário;</li>
+          <li>preferências de tema e contraste;</li>
+          <li>posição, tamanho, transparência e visibilidade dos elementos;</li>
+          <li>cidade configurada para o widget de clima;</li>
+          <li>dados meteorológicos temporariamente armazenados em cache;</li>
+          <li>outras preferências relacionadas à personalização da nova guia.</li>
+        </ul>
+
+        <p>
+          Esses dados são utilizados somente para fornecer e preservar a
+          experiência configurada pelo usuário.
+        </p>
+
+        <p>
+          A análise de luminosidade utilizada pelo tema adaptativo é
+          realizada localmente no navegador a partir do wallpaper
+          exibido. O wallpaper não é enviado a serviços externos para
+          realizar essa análise.
+        </p>
+
+        <p>
+          Wallpapers escolhidos pelo usuário não são incluídos no backup
+          opcional do Google Drive.
+        </p>
       </section>
-      <section id="google-sync"><h2>Sincronização opcional com Google</h2>
-        <p>Quando o usuário ativa a sincronização, a Nivora solicita autorização OAuth para acessar somente a área privada de dados de aplicativo do Google Drive. Essa área não permite que a extensão leia os demais arquivos do Drive.</p>
-        <ul><li>O e-mail da conta é usado apenas para identificar a sessão conectada.</li><li>O token OAuth é mantido temporariamente no armazenamento de sessão.</li><li>O backup contém configurações, atalhos e ícones personalizados.</li><li>O backup é criado, substituído ou restaurado somente por ação do usuário.</li></ul>
-        <p>O uso das informações recebidas das APIs do Google segue a <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noreferrer">Google API Services User Data Policy</a>, incluindo os requisitos de Limited Use.</p>
+
+      <section id="search-history">
+        <h2>Pesquisa e histórico</h2>
+
+        <p>
+          Quando o usuário envia uma pesquisa pela barra da Nivora, o
+          texto digitado é encaminhado ao mecanismo de pesquisa
+          selecionado.
+        </p>
+
+        <p>
+          Os mecanismos disponíveis podem incluir Bing, Google,
+          DuckDuckGo ou um mecanismo personalizado configurado pelo
+          próprio usuário.
+        </p>
+
+        <p>
+          A Nivora pode manter um histórico local das pesquisas realizadas
+          pela sua própria barra para exibir sugestões enquanto o usuário
+          digita.
+        </p>
+
+        <p>
+          Esse histórico é independente do histórico de navegação do
+          Microsoft Edge. A Nivora não lê a lista geral de páginas
+          visitadas pelo usuário.
+        </p>
+
+        <p>
+          O histórico de pesquisa pode ser desativado. O usuário também
+          pode remover entradas individuais ou apagar todo o histórico nas
+          configurações da extensão.
+        </p>
+
+        <p>
+          Quando a sincronização opcional com Google é utilizada, dados de
+          configuração atualmente suportados pelo sistema de backup podem
+          incluir o histórico de pesquisa da própria Nivora.
+        </p>
       </section>
-      <section id="external-services"><h2>Serviços externos</h2>
-        <ul><li><strong>Google APIs:</strong> autenticação e backup opcional na área privada de dados de aplicativo.</li><li><strong>Iconify:</strong> recebe somente o termo pesquisado quando o usuário escolhe buscar um ícone no catálogo.</li><li><strong>Microsoft Edge:</strong> fornece favicons para os endereços de atalhos informados pelo usuário.</li></ul>
+
+      <section id="weather">
+        <h2>Clima</h2>
+
+        <p>
+          O widget de clima é opcional.
+        </p>
+
+        <p>
+          Quando o recurso é ativado, o usuário informa uma cidade. O nome
+          dessa cidade é enviado ao serviço de geocodificação do
+          Open-Meteo para identificar a localização correspondente.
+        </p>
+
+        <p>
+          As coordenadas retornadas para essa cidade são então utilizadas
+          para consultar condições meteorológicas atuais, incluindo
+          temperatura, sensação térmica, umidade, vento e condição do
+          tempo.
+        </p>
+
+        <p>
+          A Nivora não solicita acesso ao GPS do dispositivo, não usa a
+          API de geolocalização do navegador e não determina
+          automaticamente a localização precisa do usuário.
+        </p>
+
+        <p>
+          A localização utilizada pelo widget é a cidade informada
+          manualmente pelo usuário.
+        </p>
+
+        <p>
+          Dados meteorológicos podem ser armazenados temporariamente em
+          cache para reduzir consultas desnecessárias e para permitir que
+          o último resultado válido permaneça visível durante falhas
+          temporárias de conexão.
+        </p>
       </section>
-      <section id="not-collected"><h2>O que a Nivora não coleta</h2>
-        <p>A Nivora não coleta informações financeiras, informações de saúde, comunicações pessoais, localização precisa, histórico de navegação, conteúdo de páginas visitadas ou atividade de uso para publicidade, perfilamento, avaliação de crédito ou venda a terceiros.</p>
+
+      <section id="google-sync">
+        <h2>Sincronização opcional com Google</h2>
+
+        <p>
+          A sincronização com Google é opcional e somente é iniciada
+          depois de uma ação explícita do usuário.
+        </p>
+
+        <p>
+          Quando ativada, a Nivora utiliza o fluxo de autorização OAuth do
+          Google e solicita acesso somente à área privada de dados de
+          aplicativo do Google Drive
+          (<em>appDataFolder</em>).
+        </p>
+
+        <p>
+          Essa área é destinada aos dados internos de aplicativos e não
+          concede à Nivora acesso aos demais documentos, fotos ou arquivos
+          pessoais armazenados no Google Drive.
+        </p>
+
+        <ul>
+          <li>
+            O endereço de e-mail da conta Google conectada é utilizado
+            somente para identificar a sessão ativa.
+          </li>
+
+          <li>
+            O token OAuth é mantido temporariamente no armazenamento de
+            sessão da extensão.
+          </li>
+
+          <li>
+            O token é removido quando expira ou quando o usuário encerra
+            a sessão pela Nivora.
+          </li>
+
+          <li>
+            O backup pode incluir configurações da extensão, atalhos,
+            ícones personalizados, preferências visuais, histórico de
+            pesquisa da Nivora e configurações relacionadas ao clima,
+            conforme os campos atualmente suportados pelo sistema de
+            backup.
+          </li>
+
+          <li>
+            Wallpapers não são enviados ao Google Drive.
+          </li>
+
+          <li>
+            O backup somente é criado, substituído ou restaurado quando o
+            usuário solicita essa ação.
+          </li>
+        </ul>
+
+        <p>
+          O uso das informações recebidas das APIs do Google segue a
+          <a
+            href="https://developers.google.com/terms/api-services-user-data-policy"
+            rel="noreferrer"
+          >
+            Google API Services User Data Policy
+          </a>,
+          incluindo os requisitos de Limited Use.
+        </p>
       </section>
-      <section id="retention"><h2>Retenção e exclusão</h2>
-        <p>Dados locais permanecem até serem removidos pelo usuário ou até a extensão ser desinstalada. O token OAuth expira automaticamente e também é removido quando o usuário seleciona “Sair”.</p>
-        <p>O backup permanece na área de dados de aplicativo do Google Drive até ser substituído ou removido pelo usuário nas configurações de aplicativos conectados do Google Drive. Revogar o acesso da Nivora na Conta Google impede novos acessos.</p>
+
+      <section id="external-services">
+        <h2>Serviços externos</h2>
+
+        <p>
+          Algumas funções da Nivora dependem de serviços externos:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Mecanismo de pesquisa selecionado:</strong>
+            recebe a consulta quando o usuário envia uma pesquisa.
+            Quando um mecanismo personalizado é utilizado, o destino é
+            definido pelo próprio usuário.
+          </li>
+
+          <li>
+            <strong>Open-Meteo:</strong>
+            recebe o nome da cidade configurada para geocodificação e
+            recebe as coordenadas correspondentes para fornecer os dados
+            meteorológicos atuais.
+          </li>
+
+          <li>
+            <strong>Iconify:</strong>
+            recebe o termo digitado somente quando o usuário utiliza a
+            função de pesquisar ícones no catálogo.
+          </li>
+
+          <li>
+            <strong>Google APIs:</strong>
+            são utilizadas somente depois da autorização opcional do
+            usuário para identificar a conta conectada e salvar ou
+            restaurar dados da Nivora na área privada de dados de
+            aplicativo do Google Drive.
+          </li>
+
+          <li>
+            <strong>Microsoft Edge:</strong>
+            fornece favicons associados aos endereços de atalhos
+            informados pelo usuário através da API de favicon do
+            navegador.
+          </li>
+        </ul>
       </section>
-      <section id="security"><h2>Segurança e compartilhamento</h2>
-        <p>A Nivora usa conexões HTTPS para serviços externos e solicita apenas as permissões necessárias às funções descritas. Dados não são vendidos, alugados ou transferidos para finalidades não relacionadas ao funcionamento da extensão.</p>
+
+      <section id="not-collected">
+        <h2>O que a Nivora não coleta</h2>
+
+        <p>
+          A Nivora não coleta:
+        </p>
+
+        <ul>
+          <li>informações financeiras ou de pagamento;</li>
+          <li>informações de saúde;</li>
+          <li>mensagens, e-mails ou comunicações pessoais;</li>
+          <li>senhas digitadas em sites;</li>
+          <li>histórico geral de navegação do Microsoft Edge;</li>
+          <li>conteúdo das páginas visitadas;</li>
+          <li>localização GPS ou localização precisa automática;</li>
+          <li>dados para publicidade comportamental;</li>
+          <li>dados para criação de perfis publicitários;</li>
+          <li>dados para avaliação de crédito ou empréstimos.</li>
+        </ul>
+
+        <p>
+          O histórico mantido pela Nivora refere-se somente às pesquisas
+          realizadas diretamente por sua própria barra de pesquisa.
+        </p>
+
+        <p>
+          A cidade utilizada pelo recurso de clima é informada
+          manualmente pelo usuário.
+        </p>
       </section>
-      <section id="changes"><h2>Alterações e contato</h2>
-        <p>Esta política poderá ser atualizada quando as funções da Nivora mudarem. A data da revisão será indicada nesta página. Dúvidas e solicitações podem ser enviadas ao endereço de suporte publicado na página da Nivora no Microsoft Edge Add-ons.</p>
+
+      <section id="retention">
+        <h2>Retenção e exclusão</h2>
+
+        <p>
+          Informações armazenadas localmente permanecem no navegador até
+          serem apagadas pelo usuário, substituídas por novas
+          configurações ou removidas com a desinstalação da extensão.
+        </p>
+
+        <p>
+          O histórico de pesquisa pode ser apagado separadamente nas
+          configurações da Nivora.
+        </p>
+
+        <p>
+          O token OAuth utilizado pela sincronização Google expira
+          automaticamente e também é removido quando o usuário encerra a
+          sessão.
+        </p>
+
+        <p>
+          O usuário pode revogar o acesso da Nivora através das
+          configurações da Conta Google.
+        </p>
+
+        <p>
+          A revogação impede novos acessos, mas pode não remover
+          automaticamente dados de aplicativo já armazenados. A exclusão
+          desses dados depende dos controles oferecidos pelo Google para
+          aplicativos conectados.
+        </p>
       </section>
+
+      <section id="security">
+        <h2>Segurança e compartilhamento</h2>
+
+        <p>
+          A Nivora utiliza conexões HTTPS para os serviços externos
+          descritos nesta política e solicita apenas permissões
+          relacionadas às funções oferecidas.
+        </p>
+
+        <p>
+          A Nivora não vende nem aluga dados de usuários.
+        </p>
+
+        <p>
+          Informações não são transferidas para publicidade,
+          perfilamento, avaliação de crédito ou outras finalidades não
+          relacionadas ao funcionamento da extensão.
+        </p>
+
+        <p>
+          Dados somente são enviados a serviços externos quando isso é
+          necessário para executar uma função solicitada pelo usuário,
+          como pesquisar na web, consultar o clima, pesquisar ícones ou
+          sincronizar um backup.
+        </p>
+      </section>
+
+      <section id="changes">
+        <h2>Alterações e contato</h2>
+
+        <p>
+          Esta política poderá ser atualizada quando as funcionalidades da
+          Nivora forem modificadas.
+        </p>
+
+        <p>
+          A data da última revisão será sempre indicada nesta página.
+        </p>
+
+        <p>
+          Dúvidas, solicitações ou questões relacionadas à privacidade
+          podem ser enviadas ao endereço de suporte publicado na página
+          oficial da Nivora no Microsoft Edge Add-ons.
+        </p>
+      </section>
+
       <section id="english" class="english">
-        <p class="eyebrow">English</p><h2>Privacy Policy Summary</h2>
-        <p>Nivora is a new-tab extension by WBCS. It does not sell data, display advertising, track browsing history, or perform behavioral analytics. Preferences, shortcuts, custom icons, and wallpapers are stored locally by default.</p>
-        <p>Optional Google synchronization requires explicit authorization. It uses the private Google Drive application-data area to save and restore settings, shortcuts, and custom icons. Wallpapers are not uploaded. The connected email identifies the active account, and the OAuth token is kept temporarily in session storage.</p>
-        <p>Iconify receives only icon-search terms entered by the user. Microsoft Edge provides favicons for user-created shortcuts. Data is not used for advertising, profiling, lending, or any purpose unrelated to Nivora’s single purpose.</p>
-        <p>Local data remains until removed or the extension is uninstalled. Google backup data remains until overwritten or removed through Google Drive connected-app settings. Support requests may be sent to the contact address shown on the Nivora Microsoft Edge Add-ons listing.</p>
+
+        <p class="eyebrow">English</p>
+
+        <h2>Privacy Policy Summary</h2>
+
+        <p>
+          Nivora is a customizable Microsoft Edge new-tab extension
+          created by WBCS.
+        </p>
+
+        <p>
+          Nivora does not sell user data, display advertising, monitor the
+          browser's general browsing history, or perform behavioral
+          analytics.
+        </p>
+
+        <p>
+          Locally stored information may include greeting preferences,
+          language, time zone, search-engine configuration, Nivora search
+          history, shortcuts, custom icons, wallpapers, weather settings
+          and cached weather data, themes, layout positions, sizes,
+          opacity settings, and other new-tab preferences.
+        </p>
+
+        <p>
+          Adaptive wallpaper contrast analysis is performed locally in
+          the browser.
+        </p>
+
+        <p>
+          When the user submits a search, the query is sent to the search
+          provider selected by the user. Nivora's optional search history
+          contains only searches performed through Nivora and can be
+          disabled or cleared.
+        </p>
+
+        <p>
+          The optional weather widget sends the city entered by the user
+          to Open-Meteo's geocoding service and uses the resulting city
+          coordinates to retrieve current weather information. Nivora
+          does not request GPS or precise device location.
+        </p>
+
+        <p>
+          Optional Google synchronization requires explicit user
+          authorization and uses only the private Google Drive
+          application-data area.
+        </p>
+
+        <p>
+          The connected Google account email is used only to identify the
+          active synchronization session. The OAuth token is stored
+          temporarily in extension session storage.
+        </p>
+
+        <p>
+          Backups may include supported Nivora settings, shortcuts,
+          custom icons, visual preferences, Nivora search history, and
+          weather-related configuration. Wallpapers are not uploaded.
+        </p>
+
+        <p>
+          Iconify receives icon-search terms only when the user searches
+          the icon catalog. Microsoft Edge provides favicons for
+          user-created shortcuts.
+        </p>
+
+        <p>
+          Data is not used for advertising, profiling, lending, credit
+          decisions, or purposes unrelated to Nivora.
+        </p>
+
+        <p>
+          Local data remains until cleared, replaced, or the extension is
+          uninstalled. Google authorization may be revoked at any time.
+        </p>
+
+        <p>
+          Support requests may be sent to the contact address shown on
+          the Nivora Microsoft Edge Add-ons listing.
+        </p>
+
       </section>
+
     </article>
   </div>
-  <footer><span>© 2026 WBCS</span><span>Nivora</span></footer>
+
+  <footer>
+    <span>© 2026 WBCS</span>
+    <span>Nivora</span>
+  </footer>
+
 </main>
 </body>
 </html>
